@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Entregable 3 (sesion 13)</h1>
+
+    <button id="loadPunto4y5">Cargar calculadora basica</button>
+
+    <script>
+        function loadScript(filename) {
+            const script = document.createElement('script');
+            script.src = filename;
+            script.type = 'text/javascript';
+            script.defer = true;
+            document.body.appendChild(script);
+        }
+
+        document.getElementById('loadPunto4y5').addEventListener('click', function () {
+            loadScript('Punto4y5.js');
+        });
+    </script>
+
+</body>
+
+</html>
